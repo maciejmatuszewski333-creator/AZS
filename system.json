@@ -112,5 +112,5 @@
     "secondaryTokenAttribute": "mana",
     "initiative": "(1d6)*@initD + @szybkosc",
     "manifest": "https://github.com/dungeonmemelord/AZS/raw/master/system.json",
-    "download": "https://github.com/dungeonmemelord/AZS/archive/refs/tags/v1.08.zip"
+    "download": "https://github.com/maciejmatuszewski333-creator/AZS/archive/refs/tags/v1.0.12.zip"
 }
