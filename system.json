@@ -111,6 +111,6 @@
     "primaryTokenAttribute": "zycie",
     "secondaryTokenAttribute": "mana",
     "initiative": "(1d6)*@initD + @szybkosc",
-    "manifest": "https://github.com/dungeonmemelord/AZS/raw/master/system.json",
+    "manifest" : "https://github.com/maciejmatuszewski333-creator/AZS/raw/master/system.json",
     "download": "https://github.com/maciejmatuszewski333-creator/AZS/archive/refs/tags/v1.0.13.zip"
 }
