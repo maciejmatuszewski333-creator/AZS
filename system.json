@@ -1,15 +1,14 @@
 {
   "id": "AZS",
-  "name": "AZS",
-  "title": "Zabic Smoka!",
-  "description": "Zabic Smoka do FoundryVTT",
-  "minimumCoreVersion": 10,
-  "version": "1.0.9",
+  "title": "Zabić Smoka!",
+  "description": "Zabić Smoka! – system RPG dla Foundry VTT",
+  "version": "1.0.10",
   "compatibility": {
-    "minimum": "10",
-    "verified": "10",
-    "maximum": "10"
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "12"
   },
+
   "authors": [
     {
       "name": "Wojciech Rosiński",
@@ -18,106 +17,43 @@
       "discord": "iliketoasts#4440"
     }
   ],
-  "esmodules": ["AZS.js"],
+
+  "scripts": ["AZS.js"],
   "styles": ["AZS.css"],
-  "background": "systems/AZS/assets/tlo.png",
+
   "packs": [
-    {
-      "label": "Kości skarbów",
-      "type": "Item",
-      "name": "kosci-skarbow",
-      "path": "packs/kosci-skarbow.db",
-      "private": false
-    },
-    {
-      "label": "Broń",
-      "type": "Item",
-      "name": "bron",
-      "path": "packs/bron.db",
-      "private": false
-    },
-    {
-      "label": "Zbroje",
-      "type": "Item",
-      "name": "zbroje",
-      "path": "packs/zbroje.db",
-      "private": false
-    },
-    {
-      "label": "Umiejętności",
-      "type": "Item",
-      "name": "umiejetnosci",
-      "path": "packs/umiejetnosci.db",
-      "private": false
-    },
-    {
-      "label": "Czary",
-      "type": "Item",
-      "name": "czary",
-      "path": "packs/czary.db",
-      "private": false
-    },
-    {
-      "label": "Przedmioty",
-      "type": "Item",
-      "name": "przedmioty",
-      "path": "packs/przedmioty.db",
-      "private": false
-    },
-    {
-      "label": "Torba z łupem",
-      "type": "Actor",
-      "name": "torba-z-lupem",
-      "path": "packs/torba-z-lupem.db",
-      "private": false
-    },
-    {
-      "label": "Skarby",
-      "type": "RollTable",
-      "name": "skarby",
-      "path": "packs/skarby.db",
-      "private": false
-    },
-    {
-      "label": "Tworzenie postaci",
-      "type": "RollTable",
-      "name": "tworzenie-postaci",
-      "path": "packs/tworzenie-postaci.db",
-      "private": false
-    },
-    {
-      "label": "Handouty",
-      "type": "Scene",
-      "name": "handouty",
-      "path": "packs/handouty.db",
-      "private": false
-    },
-    {
-      "label": "Demo",
-      "type": "Adventure",
-      "name": "demo",
-      "path": "packs/demo.db",
-      "private": false
-    }
+    { "label": "Kości skarbów", "type": "Item", "name": "kosci-skarbow", "path": "packs/kosci-skarbow.db", "private": false },
+    { "label": "Broń", "type": "Item", "name": "bron", "path": "packs/bron.db", "private": false },
+    { "label": "Zbroje", "type": "Item", "name": "zbroje", "path": "packs/zbroje.db", "private": false },
+    { "label": "Umiejętności", "type": "Item", "name": "umiejetnosci", "path": "packs/umiejetnosci.db", "private": false },
+    { "label": "Czary", "type": "Item", "name": "czary", "path": "packs/czary.db", "private": false },
+    { "label": "Przedmioty", "type": "Item", "name": "przedmioty", "path": "packs/przedmioty.db", "private": false },
+    { "label": "Torba z łupem", "type": "Actor", "name": "torba-z-lupem", "path": "packs/torba-z-lupem.db", "private": false },
+    { "label": "Skarby", "type": "RollTable", "name": "skarby", "path": "packs/skarby.db", "private": false },
+    { "label": "Tworzenie postaci", "type": "RollTable", "name": "tworzenie-postaci", "path": "packs/tworzenie-postaci.db", "private": false },
+    { "label": "Handouty", "type": "Scene", "name": "handouty", "path": "packs/handouty.db", "private": false },
+    { "label": "Demo", "type": "Adventure", "name": "demo", "path": "packs/demo.db", "private": false }
   ],
+
   "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    },
-    {
-      "lang": "pl",
-      "name": "Polski",
-      "path": "lang/pl.json"
-    }
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "pl", "name": "Polski", "path": "lang/pl.json" }
   ],
-  "socket": false,
-  "initiative": "(1d6)*@initD + @szybkosc",
-  "gridDistance": 1,
-  "gridUnits": "m",
+
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+
+  "initiative": {
+    "formula": "(1d6) * @initD + @szybkosc"
+  },
+
   "primaryTokenAttribute": "zycie",
   "secondaryTokenAttribute": "mana",
-  "manifest": "https://github.com/dungeonmemelord/AZS/raw/master/system.json",
-  "download": "https://github.com/dungeonmemelord/AZS/archive/refs/tags/v1.08.zip"
+
+  "background": "systems/AZS/assets/tlo.png",
+
+  "manifest": "C:\Users\macie\AppData\Local\FoundryVTT\Data\systems\AZS/system.json",
+  "download": "C:\Users\macie\AppData\Local\FoundryVTT\Data\systems\v1.13.zip"
 }
